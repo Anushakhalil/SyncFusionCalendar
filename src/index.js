@@ -4,7 +4,7 @@ import App from './App';
 import './index.css';
 import { registerLicense } from '@syncfusion/ej2-base';
 
-registerLicense('Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdnWXlccXVURWVdVU10WEQ=');
+registerLicense('#your-key');
 
 const container = document.getElementById('schedule');
 const root = createRoot(container);
