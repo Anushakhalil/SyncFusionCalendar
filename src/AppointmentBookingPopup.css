@@ -1,0 +1,96 @@
+.custom-popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  width: 700px; /* Increase the width for horizontal layout */
+  height: auto; /* Ensure the height adjusts to content */
+}
+
+.custom-popup-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 20px;
+}
+
+.custom-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px); /* Adjust width for two columns */
+}
+
+.custom-popup-input, select {
+  width: 100%; /* Ensure inputs take full width of their container */
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  font-size: 14px; /* Syncfusion font size */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Syncfusion font family */
+  border: none; /* Remove default borders */
+  border-bottom: 1px solid #ccc; /* Add bottom border */
+}
+
+.custom-popup-input:focus, select:focus {
+  outline: none; /* Remove default focus outline */
+  border-bottom: 2px solid #4CAF50; /* Change bottom border on focus */
+}
+
+.dropdown-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-popup .dropdown {
+  position: absolute;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  border-top: none; /* Remove top border */
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-radius: 0 0 4px 4px; /* Only bottom corners rounded */
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1001;
+}
+
+.custom-popup .dropdown li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.custom-popup .dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-popup button {
+  width: 100%; /* Make button full width */
+  padding: 10px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Syncfusion font size */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Syncfusion font family */
+}
+
+.custom-popup button:hover {
+  background-color: #45a049;
+}
